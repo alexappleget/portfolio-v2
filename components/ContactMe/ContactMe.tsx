@@ -47,7 +47,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="my-28 w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg">
+    <section className="my-40 w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg">
       <h2 className="text-3xl font-extrabold mb-6 text-center text-[#4A2C2A]">
         Get in Touch
       </h2>
@@ -123,6 +123,6 @@ export const ContactMe = () => {
           </Button>
         </form>
       </Form>
-    </div>
+    </section>
   );
 };

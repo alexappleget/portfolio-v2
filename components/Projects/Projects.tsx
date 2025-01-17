@@ -46,7 +46,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div className="mt-20 w-3/4">
+    <section className="mt-40 w-3/4">
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-extrabold sm:text-4xl text-[#4A2C2A]">
           Latest Brews
@@ -60,7 +60,7 @@ export const Projects = () => {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="flex flex-col bg-[#E6D2B5] border-[#4A2C2A]"
+            className="flex flex-col bg-[#E6D2B5] rounded-lg shadow-lg"
           >
             <CardHeader>
               <span className="w-12 h-12 text-[#4A2C2A]">{project.icon}</span>
@@ -101,6 +101,6 @@ export const Projects = () => {
           </Card>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
