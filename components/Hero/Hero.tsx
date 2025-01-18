@@ -2,7 +2,17 @@ import { Coffee, MoveDown } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../Button/button";
 
-export const Hero = () => {
+export const Hero = ({
+  contactRef,
+}: {
+  contactRef: React.RefObject<HTMLDivElement | null>;
+}) => {
+  const handleScrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="flex flex-col items-center text-center mt-20 w-1/2">
       <Coffee className="w-16 h-16 text-[#4A2C2A] animate-pulse" />
@@ -17,7 +27,10 @@ export const Hero = () => {
         coffee) at a time.
       </p>
       <div className="w-full flex justify-center items-center gap-16">
-        <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg">
+        <Button
+          onClick={handleScrollToContact}
+          className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg"
+        >
           Contact Me
         </Button>
         <div className="flex flex-col items-center gap-4 pb-4">

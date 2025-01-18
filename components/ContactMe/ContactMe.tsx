@@ -15,6 +15,7 @@ import { Input } from "../Input/input";
 import { Textarea } from "../Textarea/textarea";
 import { Button } from "../Button/button";
 import { sendEmail } from "@/email/sendEmail";
+import React from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -28,7 +29,7 @@ const formSchema = z.object({
   }),
 });
 
-export const ContactMe = () => {
+export const ContactMe = React.forwardRef<HTMLDivElement | null>((_, ref) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,7 +48,11 @@ export const ContactMe = () => {
   };
 
   return (
-    <section className="my-40 w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg">
+    <section
+      className="my-40 w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg"
+      id="contact-me"
+      ref={ref}
+    >
       <h2 className="text-3xl font-extrabold mb-6 text-center text-[#4A2C2A]">
         Get in Touch
       </h2>
@@ -125,4 +130,6 @@ export const ContactMe = () => {
       </Form>
     </section>
   );
-};
+});
+
+ContactMe.displayName = "ContactMe";
