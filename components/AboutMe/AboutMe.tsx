@@ -41,10 +41,20 @@ export const AboutMe = () => {
             </Link>
           </Button>
           <div className="flex gap-4 justify-center mt-6">
-            <Link href="" className="text-[#4A2C2A] hover:text-[#8B5E3C]">
+            <Link
+              href="https://www.linkedin.com/in/alex-appleget/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#4A2C2A] hover:text-[#8B5E3C]"
+            >
               <Linkedin />
             </Link>
-            <Link href="" className="text-[#4A2C2A] hover:text-[#8B5E3C]">
+            <Link
+              href="https://github.com/alexappleget"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#4A2C2A] hover:text-[#8B5E3C]"
+            >
               <Github />
             </Link>
           </div>
