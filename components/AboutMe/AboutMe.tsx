@@ -5,20 +5,22 @@ import { Github, Linkedin } from "lucide-react";
 
 export const AboutMe = () => {
   return (
-    <section className="w-1/2 mt-40">
-      <h1 className="text-3xl font-extrabold sm:text-4xl text-[#4A2C2A] text-center">
+    <section className="w-full px-4 sm:px-6 md:px-8 mt-20 md:mt-40 max-w-7xl mx-auto">
+      <h1 className="text-3xl font-extrabold sm:text-4xl text-[#4A2C2A] text-center mb-10">
         About Me
       </h1>
-      <div className="flex flex-col md:flex-row gap-6 mt-10">
-        <Image
-          className="flex-1 rounded-lg"
-          alt="Photo of Alex Appleget"
-          src={"/headshot.jpg"}
-          width={400}
-          height={400}
-        />
-        <div className="flex flex-col">
-          <p className="text-[#2C1E1A]">
+      <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <div className="w-full md:w-1/3 flex justify-center">
+          <Image
+            className="rounded-lg w-64 h-64 md:w-full md:h-auto object-cover"
+            alt="Photo of Alex Appleget"
+            src="/headshot.jpg"
+            width={400}
+            height={400}
+          />
+        </div>
+        <div className="flex flex-col w-full md:w-2/3">
+          <p className="text-[#2C1E1A] text-lg leading-relaxed mb-6">
             Hi there! I&apos;m Alex Appleget, a frontend software engineer with
             a love for creating dynamic and intuitive web applications. I
             specialize in NextJS, React, and TypeScript/JavaScript, crafting
@@ -30,33 +32,36 @@ export const AboutMe = () => {
             my passion for exploration. I&apos;m always excited to take on new
             challenges and create something amazing.
           </p>
-          <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg mx-auto mt-10">
-            <Link
-              href="/01_Alex Appleget.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
-              Download My Resume
-            </Link>
-          </Button>
-          <div className="flex gap-4 justify-center mt-6">
-            <Link
-              href="https://www.linkedin.com/in/alex-appleget/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#4A2C2A] hover:text-[#8B5E3C]"
-            >
-              <Linkedin />
-            </Link>
-            <Link
-              href="https://github.com/alexappleget"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#4A2C2A] hover:text-[#8B5E3C]"
-            >
-              <Github />
-            </Link>
+          <div className="flex flex-col items-center md:items-start gap-6 mt-6">
+            <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-full sm:w-48 h-12 text-lg">
+              <Link
+                href="/01_Alex Appleget.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="w-full h-full flex items-center justify-center"
+              >
+                Download My Resume
+              </Link>
+            </Button>
+            <div className="flex gap-6">
+              <Link
+                href="https://www.linkedin.com/in/alex-appleget/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4A2C2A] hover:text-[#8B5E3C] transition-colors duration-200"
+              >
+                <Linkedin className="w-8 h-8" />
+              </Link>
+              <Link
+                href="https://github.com/alexappleget"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4A2C2A] hover:text-[#8B5E3C] transition-colors duration-200"
+              >
+                <Github className="w-8 h-8" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

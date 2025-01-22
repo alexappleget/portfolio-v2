@@ -46,12 +46,12 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section className="mt-40 w-3/4">
-      <div className="flex flex-col items-center">
-        <h2 className="text-3xl font-extrabold sm:text-4xl text-[#4A2C2A]">
+    <section className="mt-40 w-11/12 md:w-3/4">
+      <div className="flex flex-col items-center text-center">
+        <h2 className="text-4xl md:text-3xl font-extrabold text-[#4A2C2A]">
           Latest Brews
         </h2>
-        <p className="mt-4 text-xl">
+        <p className="mt-4 text-lg md:text-xl">
           Check out my most recent projects, freshly brewed with passion and
           expertise.
         </p>

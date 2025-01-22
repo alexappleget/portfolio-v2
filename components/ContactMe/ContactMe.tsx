@@ -49,7 +49,7 @@ export const ContactMe = React.forwardRef<HTMLDivElement | null>((_, ref) => {
 
   return (
     <section
-      className="my-40 w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg"
+      className="my-40 w-11/12 md:w-full max-w-4xl mx-auto bg-[#E6D2B5] p-8 rounded-lg shadow-lg"
       id="contact-me"
       ref={ref}
     >
