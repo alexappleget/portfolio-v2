@@ -3,7 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Alex's Portfolio",
+  title: "Alex Appleget",
   description:
     "New Version of my portfolio website to showcase my skills and projects.",
 };
