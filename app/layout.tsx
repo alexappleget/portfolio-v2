@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Alex Appleget",
   description:
     "New Version of my portfolio website to showcase my skills and projects.",
+  icons: {
+    icon: "/AA.png",
+  },
 };
 
 export default function RootLayout({
