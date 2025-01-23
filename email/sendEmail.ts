@@ -25,11 +25,12 @@ export const sendEmail = async (contactInfo: ContactInfoProps) => {
       to: process.env.EMAIL_USER,
       subject: "New Message From Your Portfolio!",
       html: `
-        A new person reached out!
-
-        Name: ${contactInfo.name}
-        Email: ${contactInfo.email}
-        Message: ${contactInfo.message}
+        <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${contactInfo.name}</p>
+        <p style="font-size: 16px; color: #555;"><strong>Email:</strong> <a href="mailto:${contactInfo.email}" style="color: #007bff;">${contactInfo.email}</a></p>
+        <div style="margin-top: 10px;">
+          <p style="font-size: 16px; color: #333;"><strong>Message:</strong></p>
+          <p style="font-size: 16px; color: #444;">${contactInfo.message}</p>
+        </div>
       `,
     });
 
