@@ -46,7 +46,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section className="mt-40 w-11/12 md:w-3/4">
+    <section className="my-40 w-11/12 md:w-3/4">
       <div className="flex flex-col items-center text-center">
         <h2 className="text-4xl md:text-3xl font-extrabold text-[#4A2C2A]">
           Latest Brews
