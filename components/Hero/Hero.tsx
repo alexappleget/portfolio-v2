@@ -18,7 +18,13 @@ export const Hero = () => {
       </p>
       <div className="w-3/4 md:w-full flex justify-center items-center gap-8 md:gap-16">
         <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg">
-          Contact Me
+          <Link
+            href="https://calendly.com/alexappleget2014/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Coffee Chat
+          </Link>
         </Button>
         <div className="flex flex-col items-center gap-4 pb-4">
           <MoveDown className="animate-bounce w-10 h-10 text-[#4A2C2A]" />
