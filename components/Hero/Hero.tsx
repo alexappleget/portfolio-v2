@@ -4,7 +4,7 @@ import { Button } from "../Button/button";
 
 export const Hero = () => {
   return (
-    <section className="flex flex-col items-center text-center mt-20 w-full md:w-1/2">
+    <section className="flex flex-col items-center text-center mt-40 w-full md:w-1/2">
       <Coffee className="w-16 h-16 text-[#4A2C2A] animate-pulse" />
       <h1 className="text-6xl font-extrabold mt-10 text-[#4A2C2A]">
         Hi, I&apos;m Alex Appleget
