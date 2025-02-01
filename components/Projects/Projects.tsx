@@ -75,7 +75,7 @@ export const Projects = () => {
             </CardContent>
             <CardFooter className="flex justify-center gap-8 mt-auto">
               <Button
-                className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border border-[#4A2C2A]"
+                className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A]"
                 onClick={() => window.open(project.githubUrl, "_blank")}
               >
                 GitHub
@@ -83,7 +83,7 @@ export const Projects = () => {
               </Button>
               {project.liveSiteUrl ? (
                 <Button
-                  className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border border-[#4A2C2A]"
+                  className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A]"
                   onClick={() => window.open(project.liveSiteUrl, "_blank")}
                 >
                   Live Site

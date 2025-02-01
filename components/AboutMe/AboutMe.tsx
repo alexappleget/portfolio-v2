@@ -33,17 +33,17 @@ export const AboutMe = () => {
             challenges and create something amazing.
           </p>
           <div className="flex flex-col items-center md:items-start gap-6 mt-6">
-            <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-full sm:w-48 h-12 text-lg">
-              <Link
-                href="/01_Alex Appleget.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-                className="w-full h-full flex items-center justify-center"
-              >
+            <Link
+              href="/01_Alex Appleget.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="w-full h-full flex items-center"
+            >
+              <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-full sm:w-48 h-12 text-base">
                 Download My Resume
-              </Link>
-            </Button>
+              </Button>
+            </Link>
             <div className="flex gap-6">
               <Link
                 href="https://www.linkedin.com/in/alex-appleget/"

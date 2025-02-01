@@ -17,26 +17,26 @@ export const Hero = () => {
         coffee) at a time.
       </p>
       <div className="w-3/4 md:w-full flex justify-center items-center gap-8 md:gap-16">
-        <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg">
+        <Link
+          href="https://calendly.com/alexappleget2014/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-[#4A2C2A] text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#4A2C2A] border-2 border-[#4A2C2A] w-48 h-12 text-lg">
+            Coffee Chat
+          </Button>
+        </Link>
+        <div className="flex flex-col items-center gap-4 pb-4">
+          <MoveDown className="animate-bounce w-10 h-10 text-[#4A2C2A]" />
           <Link
-            href="https://calendly.com/alexappleget2014/30min"
+            href="https://buymeacoffee.com/alexappleget"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Coffee Chat
-          </Link>
-        </Button>
-        <div className="flex flex-col items-center gap-4 pb-4">
-          <MoveDown className="animate-bounce w-10 h-10 text-[#4A2C2A]" />
-          <Button className="bg-[#1E1E1E] w-48 h-12 text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#1E1E1E] border-2 border-[#1E1E1E] text-lg">
-            <Link
-              href="https://buymeacoffee.com/alexappleget"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Button className="bg-[#1E1E1E] w-48 h-12 text-[#E6D2B5] hover:bg-[#E6D2B5] hover:text-[#1E1E1E] border-2 border-[#1E1E1E] text-lg">
               Buy Me a Coffee
-            </Link>
-          </Button>
+            </Button>
+          </Link>
           <p className="italic text-[#4A2C2A]">I really like coffee</p>
         </div>
       </div>
